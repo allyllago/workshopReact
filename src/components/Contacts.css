@@ -1,0 +1,50 @@
+body{
+  box-sizing: border-box;
+  background: #e8cbc0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e8cbc0, #636fa4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+h1{
+  margin: 1%;
+  text-align: center;
+}
+.prueba{
+  display:flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  flex:1;
+}
+.contactCard {
+  display:flex;
+  flex-direction: column;
+  width:20%;
+  margin: 1%;
+  padding-left: 2em; 
+  border: solid 0.20em;
+  border-radius: 0.6em;
+}
+
+.form{
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  margin:auto;
+  align-items: center;
+}
+input {
+  flex-direction: row;
+  flex:1;
+}
+button {
+  background-color:#636fa4;
+  border: none;
+  width:50%;
+  height:50%;
+}
