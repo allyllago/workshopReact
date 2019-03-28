@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './TemplateContacts.css'
 
-class Contacts extends Component {
+class TemplateContacts extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -38,8 +38,9 @@ class Contacts extends Component {
     })
     return results
   }
+  
   handleChange(event) {
-    
+
     let value = event.target.value
     if (event.target.name === "name") {
       this.setState({
@@ -75,34 +76,34 @@ class Contacts extends Component {
     return (
       <React.Fragment>
         <div className="prueba">
-        <h1>Mis Contactos</h1>
-        <div className="container">
-          {this.getContacts()}
-        </div>
-        <div>
-          <h2>Agregar Contacto Nuevo</h2>
-          <form className="form">
-            <label>
-              Nombre:
+          <h1>Mis Contactos</h1>
+          <div className="container">
+            {this.getContacts()}
+          </div>
+          <div>
+            <h2>Agregar Contacto Nuevo</h2>
+            <form className="form">
+              <label>
+                Nombre:
               <input type="text" name="name" value={this.state.newContact.name} onChange={this.handleChange} />
-            </label>
-            <label>
-              Apellido:
+              </label>
+              <label>
+                Apellido:
               <input type="text" name="surname" value={this.state.newContact.surname} onChange={this.handleChange} />
-            </label>
-            <label>
-              Mail:
+              </label>
+              <label>
+                Mail:
               <input type="email" name="mail" value={this.state.newContact.mail} onChange={this.handleChange} />
-            </label>
-            <button 
-            // onClick={nuestra accion para agregar contactos}
-            >Agregar</button>
-          </form>
-        </div>
+              </label>
+              <button className="boton"
+              // onClick={nuestra accion para agregar contactos}
+              >Agregar</button>
+            </form>
+          </div>
         </div>
       </React.Fragment>
     );
   }
 }
 
-export default Contacts;
+export default TemplateContacts;

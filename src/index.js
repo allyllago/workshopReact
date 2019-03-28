@@ -6,7 +6,7 @@ import Contacts from './components/Contacts';
 import TemplateContacts from './template/TemplateContacts'
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<TemplateContacts />, document.getElementById('root'));
+ReactDOM.render(<Contacts />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

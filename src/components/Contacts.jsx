@@ -107,7 +107,7 @@ class Contacts extends Component {
               Mail:
               <input type="email" name="mail" value={this.state.newContact.mail} onChange={this.handleChange} />
             </label>
-            <button onClick={this.addContact}>Agregar</button>
+            <button className="boton" onClick={this.addContact}>Agregar</button>
           </form>
         </div>
         </div>
