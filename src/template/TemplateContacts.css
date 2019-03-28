@@ -9,6 +9,12 @@ h1{
   margin: 1%;
   text-align: center;
 }
+h2{
+  margin: 30px 1%;
+  border-top: solid 2px black;
+  padding: 20px;
+  text-align: center;
+}
 .prueba{
   display:flex;
   flex-direction: column;
@@ -28,12 +34,13 @@ h1{
   padding-left: 2em; 
   border: solid 0.20em;
   border-radius: 0.6em;
+  background-color: rgba(255, 255, 255, 0.767);
 }
 
 .form{
   display:flex;
   flex-direction: column;
-  width: 50%;
+  width: 200px;
   height: 50%;
   margin:auto;
   align-items: center;
@@ -41,10 +48,21 @@ h1{
 input {
   flex-direction: row;
   flex:1;
+  height: 30px !important;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 0.6em;
 }
-button {
+
+.boton {
   background-color:#636fa4;
   border: none;
-  width:50%;
-  height:50%;
+  width:100px;
+  padding: 15px 20px;
+  border-radius: 0.6em;
+  margin-top: 20px;
+  color:white;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-bottom: 40px;
 }
